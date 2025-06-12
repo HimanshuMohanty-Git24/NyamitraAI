@@ -104,22 +104,6 @@ A specialized AI-powered legal assistant for Indian law that provides informatio
 3. **Generate Legal Documents**: Create custom legal documents based on your requirements
 4. **Translate**: Translate legal content to multiple Indian languages
 
-## 📦 Project Structure
-
-```text
-Nyamitra-AI-Legal-Research/
-├── app.py                # Main Flask application
-├── faiss_index_ipc/      # FAISS index for IPC sections
-├── faiss_index_precedence/ # FAISS index for legal precedents
-├── faiss_index_contracts/ # FAISS index for contract templates
-├── frontend/             # React frontend application
-│   ├── public/
-│   └── src/
-│       ├── components/   # React components
-│       └── App.jsx       # Main React component
-└── requirements.txt      # Python dependencies
-```
-
 ## 🔒 Privacy and Security
 
 - All legal queries are processed securely
