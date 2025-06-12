@@ -1,0 +1,233 @@
+.Heading{
+    font-size: 3em;
+    font-weight: 500;
+}
+textarea {
+    width: 60%;  /* Reduced width */
+    max-width: 600px;  /* Ensures it doesn't become too wide */
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    font-size: 1rem;
+    resize: none;
+    transition: border-color 0.3s;
+    display: block;
+    margin: 0 auto; /* Centering */
+}
+
+.response {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;  /* Centering */
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    text-align: left;
+}
+
+
+  /* From Uiverse.io by TISEPSE */ 
+.btn2 {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #fefefe;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s;
+    margin: 15px;
+  }
+  
+  .btn2::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - -2px);
+    background-color: #212121;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btn2::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 50px);
+    background-color: #212121;
+    transition: 0.3s ease-out;
+    transform: scaleY(1);
+  }
+  
+  .btn2:hover::before {
+    transform: translateY(-25px);
+    height: 0;
+  }
+  
+  .btn2:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0.15s;
+  }
+  
+  .btn2:hover {
+    border: 2px solid #fefefe;
+  }
+  
+  .btn2 span {
+    position: relative;
+    z-index: 3;
+  }
+  
+  button {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+  }
+
+.document-creator-container {
+  padding: var(--spacing-2xl) 0;
+  background-color: var(--bg-primary);
+}
+
+.document-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  border-left: 4px solid var(--primary-500);
+}
+
+.document-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-lg);
+  border-bottom: 1px solid var(--neutral-700);
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.document-header h2 {
+  margin-bottom: 0;
+  font-family: var(--font-family-heading);
+  color: var(--text-primary);
+}
+
+.document-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.document-content {
+  padding: var(--spacing-lg);
+  background-color: white;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+/* Document styling */
+.document-content h1,
+.document-content h2,
+.document-content h3,
+.document-content h4 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.document-content h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.document-content h2 {
+  font-size: 1.5rem;
+  margin-top: 2em;
+}
+
+.document-content h3 {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.document-content p {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+.document-content ul,
+.document-content ol {
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+.document-content li {
+  margin-bottom: 0.5em;
+}
+
+.document-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+.document-content th,
+.document-content td {
+  border: 1px solid #999;
+  padding: 0.5em;
+  text-align: left;
+}
+
+.document-content th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Signature blocks */
+.document-content .signature-block {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.document-content .signature {
+  width: 45%;
+}
+
+.document-content .signature-line {
+  border-top: 1px solid #333;
+  margin-top: 3em;
+  padding-top: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .document-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .document-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .document-content {
+    padding: var(--spacing-md);
+  }
+}

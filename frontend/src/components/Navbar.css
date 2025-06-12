@@ -1,0 +1,144 @@
+.navbar {
+  background-color: var(--bg-secondary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-family: var(--font-family-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-500);
+  text-decoration: none;
+  transition: color var(--transition-quick);
+}
+
+.navbar-logo:hover {
+  color: var(--primary-400);
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.navbar-link {
+  color: var(--text-primary);
+  font-weight: 500;
+  text-decoration: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-quick);
+  position: relative;
+}
+
+.navbar-link:hover {
+  color: var(--primary-400);
+  background-color: rgba(43, 107, 190, 0.08);
+}
+
+.navbar-link.active {
+  color: var(--primary-500);
+  font-weight: 600;
+}
+
+.navbar-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 3px;
+  background-color: var(--primary-500);
+  border-radius: var(--radius-sm);
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navbar-toggle span {
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-primary);
+  transition: all 0.3s ease;
+  transform-origin: 1px;
+}
+
+.navbar-toggle.open span:first-child {
+  transform: rotate(45deg);
+}
+
+.navbar-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.open span:last-child {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background-color: var(--bg-secondary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-medium), padding var(--transition-medium);
+  }
+
+  .navbar-links.open {
+    max-height: 300px;
+    padding: var(--spacing-md) 0;
+  }
+
+  .navbar-link {
+    padding: var(--spacing-md) var(--spacing-lg);
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-link.active::after {
+    width: 40px;
+    bottom: 4px;
+  }
+}
