@@ -1,4 +1,13 @@
-# Legal Chatbot
+# Nyamitra AI Legal Research
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Flask](https://img.shields.io/badge/Flask-2.0+-green.svg)](https://flask.palletsprojects.com/)
+[![React](https://img.shields.io/badge/React-17.0+-61DAFB.svg)](https://reactjs.org/)
+
+## 📑 Overview
+
+Nyamitra AI Legal Research is a comprehensive AI-powered legal assistant specialized for Indian law. It leverages advanced natural language processing and vector search technologies to provide accurate information on the Indian Penal Code, retrieve relevant legal precedents, and generate customized legal documents. Built with a focus on accessibility and accuracy, Nyamitra aims to democratize legal information and assistance across India.
 
 A specialized AI-powered legal assistant for Indian law that provides information on the Indian Penal Code, legal precedents, and can generate legal documents.
 
@@ -39,8 +48,8 @@ A specialized AI-powered legal assistant for Indian law that provides informatio
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/yourusername/Legal_Chatbot.git
-   cd Legal_Chatbot
+   git clone https://github.com/yourusername/Nyamitra-AI-Legal-Research.git
+   cd Nyamitra-AI-Legal-Research
    ```
 
 2. Create a virtual environment
@@ -98,7 +107,7 @@ A specialized AI-powered legal assistant for Indian law that provides informatio
 ## 📦 Project Structure
 
 ```text
-Legal_Chatbot/
+Nyamitra-AI-Legal-Research/
 ├── app.py                # Main Flask application
 ├── faiss_index_ipc/      # FAISS index for IPC sections
 ├── faiss_index_precedence/ # FAISS index for legal precedents
@@ -145,4 +154,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
-For any queries regarding this project, please open an issue or contact [your-email@example.com].
+For any queries regarding this project, please open an issue or contact [nyamitra-support@example.com].
